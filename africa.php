@@ -9,7 +9,7 @@ $resultSet = $mysqli->query("SELECT name FROM africa");
 while($rows = $resultSet->fetch_assoc())
 {
     $name = $rows['name'];
-    echo "<option value='name'>$name</option>";
+    echo "<option>$name</option>";
 }
 ?>
 </select>
